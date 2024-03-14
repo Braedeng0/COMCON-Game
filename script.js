@@ -48,7 +48,6 @@ function checkCWU() {
   if (window.CWU < -998) {
     window.CWU = -998
   }
-  updateDiscord();
 }
 
 function print(text, weight = 'normal', type = 'p', color = 'white') {
@@ -1479,16 +1478,12 @@ async function CPM4() {
 }
 
 window.CPM = 1;
-updateDiscord();
 CPM1(function() {
   window.CPM = 2;
-  updateDiscord();
   CPM2(function() {
     window.CPM = 3;
-    updateDiscord();
     CPM3(function() {
       window.CPM = 4;
-      updateDiscord();
       CPM4()
     });
   });
