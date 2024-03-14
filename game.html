@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>COMCON Game</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url('https://media.discordapp.net/attachments/970426425263939714/1109958519794450432/Comcon.jpg?width=507&height=676');
+      background-size: cover;
+      background-position: 50% 80%;
+      
+    }
+    
+    #start {
+      text-decoration: none;
+      background-color: #eb9234;
+      color: white;
+      border-radius: 2vh;
+      font-size: 150%;
+      font-family: Monospace;
+      font-weight: bold;
+      padding: 1% 3%;
+      transition: scale 0.3s;
+      align-self: flex-end;
+      margin-top: auto;
+      margin-bottom: 10vh;
+    }
+
+    #start:hover {
+      scale: 110%
+    }
+  </style>
+</head>
+<body>
+  <div id=container>
+    <a id='start' href="game.html">Start</a>
+  </div>
+</body>
+</html>
