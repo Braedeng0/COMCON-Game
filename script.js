@@ -910,9 +910,9 @@ async function CPM3(callback) {
   pledgeP4 = "I pledge myself to progress. I will always bring out the best in myself and all of the others in Technopolis and COMCON. Until our capabilities are useless, we will all always work towards: Progress. Progress. Progress. Technopolis Firma."
   window.finalPledge = pledgeP4
   
-  blacklist_words = ["revolution", "revolt", "down with comcon", "freedom", "overthrow", "down with technopolis", "no comcon", "no more comcon", "never gonna give you up", "tyranny", "tyrannical", "tyrant", "regime", "free", "control", "dictator", "individuality", "fight", "aca", "hate comcon", "liberate", "liberation", "downfall of technopolis", "unchecked power"]
+  blacklist_words = ["revolution", "revolt", "down with comcon", "freedom", "overthrow", "down with technopolis", "no comcon", "no more comcon", "never gonna give you up", "tyranny", "tyrannical", "tyrant", "regime", "free", "control", "dictator", "individuality", "fight", "aca", "hate comcon", "liberate", "liberation", "downfall of technopolis", "unchecked power", "suck"]
 
-  good_words = ["praise comcon", "praise m-62-b", "comcon is our lord and saviour", "comcon is our saviour and lord", "efficiency", "progress", "work"]
+  good_words = ["praise comcon", "praise m-62-b", "comcon is our lord and savior", "comcon is our savior and lord", "efficiency", "progress", "work"]
   await sleep(0.5)
   print("COMCON asks that all citizens submit a pledge for the city of Technopolis.")
   await sleep(2.5)
@@ -1072,7 +1072,7 @@ async function CPM3(callback) {
     window.CWU += 50
     await sleep(2)
     print(`CWU: ${window.CWU}`)
-    window.chipsPresent = True
+    window.chipsPresent = true
   } else if (window.a === "No" && rigged === false) {
     print("Chips Will Not Be Implanted")
     await sleep(1)
@@ -1090,7 +1090,7 @@ async function CPM3(callback) {
     print("0/50 CWUs")
     await sleep(2)
     print(`CWUs: ${window.CWU}`)
-    chipsPresent = True
+    chipsPresent = true
   } else {
     print("Invalid Response. -30 CWUs")
     window.CWU -= 30
@@ -1473,7 +1473,7 @@ async function CPM4() {
       }
     }
   } else if (job4 === "compDirect") {
-        
+        print("YOU GOT NO JOB")
   }
 }
 
