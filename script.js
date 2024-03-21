@@ -1477,6 +1477,22 @@ async function CPM4() {
   }
 }
 
+async function ending() {
+  if(chipsPresent === True){
+    if (-6 < DeciderCount < 2){
+      Ending = random.choice(["Chips2", "Chips3"])
+    } else {
+      Ending = "Chips1"
+    }
+  } else {
+    if (-6 < DeciderCount < -2) {
+      Ending = "NoChips1"
+    } else {
+      Ending = "NoChips2or3"
+    }
+  }
+}
+
 window.CPM = 1;
 CPM1(function() {
   window.CPM = 2;
@@ -1484,7 +1500,9 @@ CPM1(function() {
     window.CPM = 3;
     CPM3(function() {
       window.CPM = 4;
-      CPM4()
+      CPM4(function() {
+        ending();
+      });
     });
   });
 });
